@@ -46,6 +46,18 @@ a{
 body{
     min-width: 100%;
     min-height: 200vh;
+    animation-name: faded;
+    animation-duration: 0.8s;
+}
+
+@keyframes faded {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
 
 
