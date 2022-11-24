@@ -342,13 +342,18 @@ body{
 }
 .vd{
     flex: 1;
+    position: relative;
     max-width: 32%;
     text-align: center;
     border-radius: 1rem;
     border-radius: 1rem;
     background-color: rgba(200, 200, 200, 0.6);
     backdrop-filter: blur(10px);
+    transition: height 0.5s;
+  -webkit-transition: height 0.5s;
 }
+
+
 
 .vd-images{
     width: 50%;
@@ -357,6 +362,44 @@ body{
 .vdet{
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 2rem;
+    transition: 0.4s;
+}
+
+
+.section5{
+    padding:3rem 0;
+    width: 98%;
+    margin: 2rem auto;
+    background-color: rgba(200, 200, 200, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.contact{
+    display: flex;
+    flex: 0.5;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact-iconlink {
+    text-align: center;
+    overflow: hidden;
+    width: auto;
+    transition: 0.5s;
+}
+
+.contact-icon{
+    width: 2rem;
+    transition: all 0.5s;
+}
+.contact-icon:hover{
+width:3rem;
+}
+.author{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -394,10 +437,11 @@ body{
     #about-me{
         font-size: 0.8rem;
     }
-
+    
     .vdet{
         font-size: 1.8rem;
     }
+    
     
 }
 @media  screen and (max-width:1150px){
@@ -534,5 +578,14 @@ body{
     }
     .vd-images{
         width: 80%;
+    }
+    #author{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:450px){
+    #author{
+        font-size: 0.6rem;
     }
 }
